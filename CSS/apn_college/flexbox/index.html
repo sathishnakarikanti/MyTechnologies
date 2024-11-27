@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexbox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                text-align: center;
+            }
+            div{
+                height: 200px;
+                width: 200px;
+                border: 2px solid rgb(247, 243, 243);
+                display: inline-block;
+            }
+            #container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color: lightgray;
+                align-items: flex-start;
+            }
+            #box1{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+            }
+            #box2{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+            }
+            #box3{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+            }
+            #box4{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+            }
+            #box5{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox Playground</h1>
+    <div id="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div>
+    </body>
+</html>

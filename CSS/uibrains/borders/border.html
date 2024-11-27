@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            div{
+                background-color: lightgreen;
+                text-align: center;
+                padding: 20px;
+                font-size:10px;
+                width: 200px;
+            }
+            #border-all {
+                border: 5px solid limegreen;
+            }
+            #border-single{
+                border-left: 10px solid limegreen;
+            }
+            #border-rounded-all{
+                border: 15px solid limegreen;
+                border-radius: 30px;
+            }
+            #circle{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: rgb(216, 168, 106);
+            }
+            #border-circle{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: rgb(216, 168, 106);
+                border : 2px solid red;
+            }
+            #frame{
+                height: 100px;
+                width: 100px;
+                border: 20px solid gray;
+            }
+            #frame-individual-side{
+                height: 100px;
+                width: 100px;
+                border-left: 15px solid gray;
+                border-right: 15px solid gray;
+                border-top: 15px solid rgb(206, 228, 11);
+                border-bottom: 15px solid rgb(206, 228, 11);
+            }
+            #ring{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border-left: 15px solid gray;
+                border-right: 15px solid gray;
+                border-top: 15px solid rgb(206, 228, 11);
+                border-bottom: 15px solid rgb(206, 228, 11);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Border all sides</h2>
+        <div id ="border-all">
+            <h2>Border all side..!</h2>
+        </div>
+
+        <h2>Border single side</h2>
+        <div id ="border-single">
+            <h2>Border single-side..!</h2>
+        </div>
+        <h2>Border-rounded-all</h2>
+        <div id="border-rounded-all">
+            <h2>Border round all</h2>
+        </div>
+        <h2>circle</h2>
+        <section id="circle"></section>
+        <h2>border-circle</h2>
+        <section id="border-circle"></section>        
+        <h2>frame</h2>
+        <section id="frame"></section> 
+        <h2>individual side frame</h2>
+        <section id="frame-individual-side"></section> 
+        <h2>Ring</h2>
+        <section id="ring"></section> 
+    </body>
+</html>

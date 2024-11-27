@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit PayFort Payment</title>
+</head>
+<body>
+
+    <button onclick="submitPaymentRequest()">Submit Payment</button>
+    <button onclick="GeneratePaymentLink()">Generate Payment Link</button>
+
+    <script>
+       async function submitPaymentRequest() {
+            // Request parameters
+            const requestParams = {
+                command: 'PURCHASE',
+                access_code: '3bK61VyP5osH38aPNpdu',
+                merchant_identifier: 'cbd4fa3d',
+                merchant_reference: 'TEST81005',
+                amount: 10000,
+                currency: 'AED',
+                language: 'en',
+                customer_email: 'sathish.nakarikanti@conscendo.io',
+                signature: '37be7817e77c6d034dc1ebeb3b55609ce87e0e2e506a0a174706c34b707b1759',
+                order_description: 'iPhone 6-S'
+            };
+
+            const redirectUrl = 'https://sbcheckout.payfort.com/FortAPI/paymentPage';
+
+            // Create the form element dynamically
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = redirectUrl;
+
+            // Add hidden input fields for each request parameter
+            for (const [key, value] of Object.entries(requestParams)) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = value;
+                form.appendChild(input);
+            }
+
+            // Append the form to the body
+            document.body.appendChild(form);
+
+            // Submit the form
+            await form.submit();
+        }
+        
+
+        async function GeneratePaymentLink() {
+            const url = 'https://sbpaymentservices.payfort.com/FortAPI/paymentApi';
+
+            // Request data
+            const requestData = {
+                service_command: 'PAYMENT_LINK',
+                access_code: '3bK61VyP5osH38aPNpdu',            // Replace with actual access code
+                merchant_identifier: 'cbd4fa3d',  // Replace with actual merchant identifier
+                merchant_reference: 'TEST81005',
+                amount: 10000,
+                currency: 'AED',
+                language: 'en',
+                customer_email: 'sathish.nakarikanti@conscendo.io',
+                request_expiry_date: '2024-12-22T15:36:55+03:00',
+                notification_type: 'EMAIL',
+                signature:'610243edd7a8d8a678fb568cb54a77b528329a264b473d54d6a06e6e58200653'                  // Replace with actual signature
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                // Parse the JSON response
+                const result = await response.json();
+                console.log("Response:", result);
+
+                // Display the result on the page
+                document.body.innerHTML += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+            } catch (error) {
+                console.error("Error:", error);
+                document.body.innerHTML += `<pre>Error: ${error.message}</pre>`;
+            }
+        }
+    </script>
+
+</body>
+</html>

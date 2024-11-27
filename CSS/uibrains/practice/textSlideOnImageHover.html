@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text slide on Image over</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        .main-content {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper-content {
+            width: 350px;
+            height: 250px;
+            position: relative;
+        }
+        .wrapper-content img {
+            width: inherit;
+            height: inherit;
+            border-radius: 5px;
+            transform: translateX(50%);
+            transition: all 0.5s;
+        }
+        .card-content {
+            position: absolute;
+            width: 170px;
+            height: 250px;
+            color: aliceblue;
+            background-color: rgb(123, 156, 156);
+            left: 0;
+            top: 0;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+            border-radius: 5px 0 0 5px;
+            box-shadow: 0 10px 10px black;
+        }
+        .wrapper-content:hover .img{
+            transform: translateX(0%);
+        }
+    </style>
+    <body>
+        <div class="main-content">
+            <div class="wrapper-content">
+                    <img src="../images/diwali.webp" />
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis doloribus sunt, nostrum esse molestiae alias, expedita officia quam reprehenderit at sint vitae, animi eligendi ipsam magnam tempora rerum temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

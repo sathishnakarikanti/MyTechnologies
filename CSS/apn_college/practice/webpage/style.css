@@ -1,0 +1,36 @@
+
+.header {
+    background-color: black;
+    height: 60px;
+}
+.header a {
+    margin-right: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: saddlebrown;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+.content {
+    text-align: center;
+    height: 500px;
+}
+.content-box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#logo {
+    color: orange;
+    font-size: 25px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}

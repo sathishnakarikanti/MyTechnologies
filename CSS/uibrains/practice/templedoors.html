@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Temple Doors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .main-content {
+                text-align: center;
+                width: 300px;
+                height: 450px;
+                border: 15px dotted saddlebrown;
+                margin: auto;
+                box-shadow: 0 10px 10px black;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .main-content img {
+                width: inherit;
+                height: inherit;
+                transition: all 0.5s;
+            }
+            
+            .main-content:hover img {
+                transform: scale(1.2, 1.2);
+            }
+            
+            .content-left {
+                background-size: cover; /* Make the background image cover the container */
+                background-position: center; /* Center the background image */
+                background-repeat: no-repeat; /* Prevent the background from repeating */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                transition: all 0.8s; /* Smooth movement on hover */
+                transform: perspective(400px) rotateY(0deg); /* Move left door to the right */
+                transform-origin:  left;
+            }
+            
+            .content-right {
+                background-size: cover; /* Make the background image cover the container */
+                background-position: center; /* Center the background image */
+                background-repeat: no-repeat; /* Prevent the background from repeating */
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                transition: all 0.8s; /* Smooth movement on hover */
+                transform: perspective(400px) rotateY(0deg); /* Move left door to the right */
+                transform-origin:  right;
+            }
+
+            .content-left {
+                left: 0;
+                background-image: url("../images/door.jpg");
+            }
+            
+            .content-right {
+                right: 0;
+                background-image: url("../images/door.jpg");
+            }
+            
+            /* Hover effect for both doors */
+            .main-content:hover .content-left {
+                transform: perspective(400px) rotateY(90deg); /* Move left door to the right */
+            }
+            .main-content:hover .content-right {
+                transform: perspective(400px) rotateY(-90deg); /* Move right door to the left */
+            }
+            .content-right-1 {
+                background-size: cover; /* Make the background image cover the container */
+                background-position: center; /* Center the background image */
+                background-repeat: no-repeat; /* Prevent the background from repeating */
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                transition: all 0.20s; /* Smooth movement on hover */
+                transform: perspective(400px) rotateY(0deg); /* Move left door to the right */
+                transform-origin:  right;
+            }
+            .content-left-1 {
+                background-size: cover; /* Make the background image cover the container */
+                background-position: center; /* Center the background image */
+                background-repeat: no-repeat; /* Prevent the background from repeating */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                transition: all 0.20s; /* Smooth movement on hover */
+                transform: perspective(400px) rotateY(0deg); /* Move left door to the right */
+                transform-origin:  left;
+            }
+            .content-left-1 {
+                left: 0;
+                background-image: url("../images/door.jpg");
+            }
+            
+            .content-right-1 {
+                right: 0;
+                background-image: url("../images/door.jpg");
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- <h2>Temple</h2> -->
+         <div class="main-content">
+            <img src="../images/venkateshwara_swamy.jpg" alt="lord"/>
+            <div class="content-left">
+                <!-- <img src="../images/door.jpg" alt=""> -->
+            </div>
+            <!-- <div class="content-left-1">
+            </div>
+            <div class="content-right-1">
+            </div> -->
+            <div class="content-right">
+                <!-- <img src="../images/door.jpg" alt=""> -->
+            </div>
+            
+         </div>
+    </body>
+</html>

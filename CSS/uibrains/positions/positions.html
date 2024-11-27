@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Positions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .box{
+                height: 50px;
+                width: 50px;
+                box-shadow: 0 0 10px black;
+                margin-bottom: 500px;
+            }
+            .box1{
+                background-color: red;
+                position: relative;
+                left: 200px;
+            }
+            .box2{
+                background-color: rgb(240, 157, 157);
+                position: absolute;
+                left: 100px;
+                top: 100px;
+            }            
+            .box3{
+                background-color: rgb(22, 11, 11);
+                position: absolute;
+                right: 100px;
+                bottom: 100px;
+            }            
+            .box4{
+                background-color: rgb(123, 176, 180);
+                position: fixed;
+                top: 0px;
+            }            
+            .box5{
+                background-color: rgb(55, 14, 236);
+            }
+            .container{
+                width: 400px;
+                height: 400px;
+                box-shadow: 0 0 10px gray;
+                left: 400px;
+                position: relative;
+            }   
+            </style>
+    </head>
+    <body>
+        <div class="box box1"></div>
+        <div class="container">
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="box box4"></div>
+        <div class="box box5"></div>
+    </body>
+</html>

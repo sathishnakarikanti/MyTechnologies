@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Css Display</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            h3{
+                background-color: rgb(221, 161, 83);
+                margin: 5px;
+                padding: 5px;
+                display: inline;
+            }
+            div{
+                margin: 20px;
+            }
+            span{
+                background-color: rgb(221, 161, 83);
+                margin: 5px;
+                padding: 5px;
+                display: block;
+            }
+            .displayProp{
+                margin: 5px;
+                padding: 5px;
+                background-color: rgb(170, 190, 190);
+            }
+            .displayProp:hover{
+                display: none;
+            }
+            .blockEle{
+                display: block;
+                margin: 5px;
+                padding: 5px;
+            }
+            .parent{
+                text-align: center;
+                background-color: rgba(210, 210, 211, 0.459);
+            }
+            .child{
+                background-color: rgb(25, 100, 129);
+                color: whitesmoke;
+                padding: 15px;
+                display: inline-block;
+                width: 200px;
+                box-shadow: 0 0 10px black;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>React JS</h3>
+            <h3>Node JS</h3>
+            <h3>Salesforce</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <span>1.Odio, consequatur aperiam, eveniet dolor earum perspiciatis quasi </span>
+                <span>2. Facere incidunt minus nihil porro reiciendis expedita accusamus </span>
+                <span>3. Id mollitia accusantium ab voluptate nemo!</span>
+            </p>
+        </div>
+        <div>
+            <p class="displayProp">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus laudantium accusantium accusamus tempora illum architecto iusto repellendus, eaque repudiandae quasi incidunt, ipsa voluptatum reiciendis earum laboriosam laborum similique rerum.
+            </p>
+        </div>
+        <div>
+            <a class="blockEle" href="#"> Home</a>
+            <a class="blockEle" href="#"> About</a>
+            <a class="blockEle" href="#"> Contact</a>
+            <a class="blockEle" href="#"> Career</a>
+        </div>
+        <div class="parent">
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda ducimus, tempore alias ea sequi! Amet itaque accusamus quaerat laboriosam doloribus nisi delectus, modi vitae officia dignissimos porro eius impedit.</p>
+            </div>
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda ducimus, tempore alias ea sequi! Amet itaque accusamus quaerat laboriosam doloribus nisi delectus, modi vitae officia dignissimos porro eius impedit.</p>
+            </div>            
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda ducimus, tempore alias ea sequi! Amet itaque accusamus quaerat laboriosam doloribus nisi delectus, modi vitae officia dignissimos porro eius impedit.</p>
+            </div>            
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda ducimus, tempore alias ea sequi! Amet itaque accusamus quaerat laboriosam doloribus nisi delectus, modi vitae officia dignissimos porro eius impedit.</p>
+            </div>
+        </div>
+    </body>
+</html>

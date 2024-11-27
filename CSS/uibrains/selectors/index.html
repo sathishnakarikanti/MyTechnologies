@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            
+            #hello{
+                background-color: aliceblue;
+            }
+            p{
+                background-color: aqua;
+            }
+            .hello{
+                background-color: azure;
+                text-align: center;
+            }
+            .hello1{
+                background-color: rgb(85, 129, 129);
+            }
+            input[type='text']{
+                background-color: azure;
+                transition: all 0.5s;
+            }
+            input{
+                background-color: rgb(64, 102, 102);
+            }
+            input[type="text"]:focus{
+                background-color: rgb(172, 149, 24);
+                color: black;
+                font-size: 18px;
+            }
+            input[type="button"]:hover{
+                background-color: aqua;
+                color: black;
+                padding: 5px;
+            }
+
+            ul li{
+                background-color: chocolate;
+            }
+            ol{
+                background-color: rgb(204, 181, 165);
+            }
+            ol li {
+                background-color: rgb(79, 117, 124);
+            }
+            ol #itemColor {
+                background-color: rgb(35, 50, 53);
+            }
+            ol li:nth-child(1){
+                background-color: rgb(230, 174, 55);
+            }
+            ol li:nth-child(2){
+                background-color: rgb(35, 208, 243);
+            }           
+            ol li:nth-child(3){
+                background-color: rgb(202, 226, 64);
+            }
+            ol li:nth-child(4){
+                background-color: rgb(175, 39, 134);
+            }
+            ol div li:nth-child(even){
+                background-color: rgb(236, 91, 6);
+            }
+            ol div  li:nth-child(odd){
+                background-color: rgb(114, 5, 238);
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div>
+        <p>hello</p>
+        <h4>Id and class selectors with differences</h4>
+        <p id="hello">hello</p>
+        <p class="hello" id="hello">hello</p>
+        <p class="hello hello1">hello</p>
+        <h4>Attribute selectors</h4>
+        <form>
+            <input type="text"/>
+            <input type="password"/>
+            <input type="button" value="submit"/>
+        </form>
+        <h4>Pseudo selector</h4>
+            <input type="text" />
+        <h4>Mixed selector</h4>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>react js</li>
+        </ul>
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>react js</li>
+        </ol>
+        <ol>
+            <div>
+            <li >html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>react js</li>
+        </div>
+        </ol>
+        <div class="firstLast">
+        <ol>
+            <li >html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>react js</li>
+        </ol>
+    </div>
+       </div>
+    </body>
+</html>

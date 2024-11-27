@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* main header  */
+.main-header {
+    background-color: #24262c;
+    font-family: open, sans-serif;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.main-header p {
+    text-align: center;
+    padding: 2px 20px;
+    font-size: 12px;
+}
+.main-header .web-link  {
+    padding:  3px 30px 3px 5px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* Header heading*/
+.header-heading {
+    background-color: #806BDC;
+    text-align: center;
+    font-size: 25px;
+    padding: 1px;
+}
+
+/* trending items list */
+.trending-items-list {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: white;
+}
+.trending-items-list .trending-item img {
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* banner and offers sections */
+ .banner-offers {
+ background-color: lightgray;
+ display: grid;
+ align-items: center;
+justify-content: center;
+padding: 40px;
+text-align: center;
+}
+.banner-image img {
+    width: 1200px;
+    height: 300px;
+}
+.banner-offers .offers-heading {
+    font-size: 25px;
+    font-weight: 1000;
+    font-family: Helvetica ,Helvetica Arial,sans-serif;
+    line-height: 1.4287143
+}
+
+/* offers table  */
+.offers-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes double borders */
+}
+.offers-table th{
+    background-color: #806BDC;;
+}
+.offers-table, .offers-table th, .offers-table td {
+    border: 1px solid gray; /* Adds border to table, header, and cells */
+    padding: 12px; /* Adds some space inside cells */
+    text-align: center; /* Centers text in each cell */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+.offers-table td {
+    font-size: 18px;
+}
+.about-fashion-store {
+    color: #878787;
+    margin:20px;
+    width: 92vw;
+    list-style-position: inside;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+}
+.about-fashion-store .festival-des{
+    margin-top: 0px;
+}
+.about-fashion-store .festival-header{
+    margin-bottom: 0px;
+}
+.about-fashion-store ul{
+    margin-top: 0px;
+}
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: Helvetica,Helvetica Arial,sans-serif;
+}

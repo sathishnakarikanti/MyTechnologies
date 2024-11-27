@@ -1,0 +1,6 @@
+body{
+    background-color: aqua;
+}
+#wide h1{
+    display: block;
+}

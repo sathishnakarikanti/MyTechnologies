@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" group="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .register-form{
+                background: linear-gradient(45deg, blueviolet, deeppink);
+                width: 300px;
+                margin: 50px auto;
+                font-family: Arial, sans-serif;
+                padding: 15px;
+                color: white;
+                border-radius: 5px;
+                box-shadow: 0 5px 10px black;
+            }
+            .register-form h2{
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+            }
+            .form-group{
+                margin: 10px 0;
+            }
+            .form-group label{
+                display: block;
+                padding: 5px;
+            }
+            .fa-user-circle{
+                font-size: 80px;
+                display: block;
+                text-align: center;
+                border: 10px solid deeppink;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                margin: auto;
+                margin-top: -50px;
+                background-color: deeppink;
+                box-shadow: 0 0 5px black;
+            }
+            .form-control{
+                background-color: aliceblue;
+                font-size: 18px;
+                width: 290px;
+                height: 35px;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                background: transparent;
+                color: #ec89b9;
+                border-bottom: 1px solid #ec89b9;
+            }
+            
+            .form-control:focus{
+                border-bottom: 1px solid #dbe5f3;
+            }
+            ::placeholder {
+                color: #ec89b9;
+            }
+            .form-control .select-option{
+                color: #ec89b9
+            }
+            .form-control option{
+                color: #ec89b9;
+            }
+            .form-btn{
+                margin: 15px 0;
+                background: linear-gradient(45deg, blueviolet, deeppink) ;
+                color: white;
+                padding: 12px 25px;
+                font-size: 15px;
+                width: 290px;
+                border: none;
+                box-shadow: 0 5px 10px black;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="register-form">
+        <i class="fa fa-user-circle"></i>
+        <h2>Registration Form</h2>
+        <div class="form-group">
+            <!-- <label>UserName</label> -->
+            <input type="text" class="form-control" placeholder="userName"/>
+        </div>
+        <div class="form-group">
+            <!-- <label>Email</label> -->
+            <input type="email" class="form-control" placeholder="Email"/>
+        </div>    
+        <div class="form-group">
+            <!-- <label>Password</label> -->
+            <input type="Password" class="form-control" placeholder="Password"/>
+        </div>    
+        <div class="form-group">
+            <!-- <label>Designation</label> -->
+            <select class="form-control">
+                <option value="" class="select-option">Select</option>
+                <option value="">Trainee </option>
+                <option value="">Jr. Developer</option>
+                <option value="">Sr. Developer</option>
+                <option value="">Lead</option>
+            </select>
+        </div>   
+         <div class="form-group">
+            <input type="button" value="Register"  class="form-btn"/>
+        </div>
+    </div>
+    </body>
+</html>

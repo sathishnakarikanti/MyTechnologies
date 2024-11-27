@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .main-content {
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                color: white;
+                height: 100vh;
+                overflow: hidden;
+            }
+            .wrapper{
+                position: relative;    
+                width: 400px;
+                height: 400px;
+                overflow: hidden;        
+            }
+            .image-content img{
+                width: 400px;
+                height: 300px;
+                box-shadow: 0 5px 10px rgb(102, 91, 91);
+                border-radius: 10px;
+            }
+            .text-content {
+                transition: transform 0.8s ease;
+                position: absolute;
+                width: 200px;
+                height: 300px;  
+                top: 0;
+                left: 0;
+                background-color:  rgb(48, 49, 40);; 
+                align-items: center;
+                justify-content: center;
+                color: black;
+                transform: perspective(400px) rotateY(90deg); /* Move left door to the right */
+                background-color: rgb(67, 68, 60);
+                border-radius: 10px;
+                display: block;
+                transform-origin: top;
+                padding: 10px;
+            }
+              /* Hover effect for both doors */
+              .wrapper:hover .text-content {
+                transition: transform 0.8s ease;
+                transform: perspective(400px) rotateY(0deg);
+                transform-origin: left;
+                background-color:  rgb(212, 233, 20);
+                opacity: 0.8;
+
+            }
+            .wrapper:hover img {
+                transform: scale(1.2, 1.2);
+            }
+        </style>
+    </head>
+    <body>
+            <div class="main-content">
+                <div class="wrapper">
+
+                <div class="image-content">
+                    <img src="../images/diwali.webp" alt="">
+                </div>
+                <div class="text-content">
+                    <h4>Hinduism</h4>
+                        <p>
+                            Diwali celebrates the return of Prince Rama, his wife Sita, and brother Lakshman from exile after defeating the demon king Ravana. It also symbolizes the triumph of good over evil, light over darkness, and knowledge over ignorance.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

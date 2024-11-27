@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin-bottom: 300px;
+            }
+            .bg-color{
+                background-color: teal;
+            }
+            .gb-image{
+                box-shadow: 0 0 10px black;
+                padding: 15px;
+                width: 500px;
+                background-color: lightsalmon;
+                background-image: url(../images/bowl.jpg);
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-attachment: scroll;
+            }
+            .bg-repeat{
+                width: 500px;
+                height: 300px;
+                box-shadow: 0 0 10px black;
+                background-image: url("../images/bowl.jpg");
+                background: color image repeat attachment position
+            }
+            .bg-position{
+                width: 500px;
+                height: 300px;
+                box-shadow: 0 0 10px black;
+                background-image: url("../images/bowl.jpg");
+                background-position: bottom right;
+                background: color image repeat attachment position
+            }
+            #bg-attachment{
+                height: 250px;
+                box-shadow: 0 0 10px black;
+                background:white url("../images/natureOne.avif") no-repeat fixed center;
+                background-size: cover;
+            }
+            .bg-size{
+                box-shadow: 0 0 10px black;
+                height: 200px;
+                width: 200px;
+                background-image: url("../images/ball.png");
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+    <h5>CSS background</h5>
+    <div class="bg-color">
+        <p>Teal color background</p>
+    </div>
+    <h5>background Image</h5>
+    <div class="gb-image">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid sunt odio, harum vero voluptas asperiores totam quis possimus iste beatae a repellat doloribus odit eius autem, libero pariatur porro provident!</p>
+    </div>
+    <h5>background attachment</h5>
+    <div id="bg-attachment">
+    </div>
+    <h5>background Repeat</h5>
+    <div class="bg-repeat">
+    </div>
+    <h5>background position</h5>
+    <div class="bg-position">
+    </div>
+    <h5>background size</h5>
+    <div class="bg-size">
+    </div>
+    </body>
+</html>
